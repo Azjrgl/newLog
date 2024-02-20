@@ -3,14 +3,14 @@ import { ThemeContext } from "./MainProvider";
 import { useContext, useState } from "react";
 
 export const DashHeader = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
-  const handler = () => {
-    setTheme("red");
-  };
+  //   const { theme, setTheme } = useContext(ThemeContext);
+  //   const handler = () => {
+  //     setTheme("red");
+  //   };
 
   return (
     <div
-      style={{ backgroundColor: theme }}
+      //   style={{ backgroundColor: theme }}
       className="w-screen h-[72px] border border-black flex items-center justify-around bg-white "
     >
       <div className="w-[225.4px] h-[40px] gap-[24px] flex items-center">
@@ -32,7 +32,7 @@ export const DashHeader = () => {
           </div>
         </div>
       </div>
-      <button onClick={handler}>Theme</button>
+      {/* <button onClick={handler}>Theme</button> */}
     </div>
   );
 };
