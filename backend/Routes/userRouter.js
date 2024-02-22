@@ -10,3 +10,4 @@ export const userRouter = express.Router();
 //Post
 userRouter.post("/Users/sign", createNewUserService);
 userRouter.post("/Users/login", authMiddleware, getUserByEmailService);
+

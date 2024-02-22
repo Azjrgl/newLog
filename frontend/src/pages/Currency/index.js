@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Index() {
   return (
@@ -37,11 +38,11 @@ function Index() {
         </select>
         Your base currency should be the one you use most often. All transaction
         in other currencies will be calculated based on this one
-        <a href="/Balance">
+        <Link href="/Balance">
           <button className="w-[384px] h-[48px] bg-[#0166FF] rounded-[20px] text-[20px] text-white">
             Confirm
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   );
